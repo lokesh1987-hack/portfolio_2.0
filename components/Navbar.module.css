@@ -1,0 +1,138 @@
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 60px;
+  transition: all 0.4s;
+}
+
+.scrolled {
+  padding: 16px 60px;
+  background: rgba(5, 10, 15, 0.9);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--border);
+}
+
+.logo {
+  font-family: var(--font-mono);
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.logoSymbol { color: var(--cyan); }
+
+.links {
+  display: flex;
+  list-style: none;
+  gap: 36px;
+}
+
+.link {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--muted);
+  letter-spacing: 0.05em;
+  transition: color 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.link:hover { color: var(--cyan); }
+
+.linkNum {
+  color: var(--cyan);
+  font-size: 11px;
+}
+
+.navCta {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  color: var(--cyan);
+  border: 1px solid var(--cyan);
+  padding: 8px 20px;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.navCta::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--cyan);
+  transform: translateX(-100%);
+  transition: transform 0.3s;
+  z-index: 0;
+}
+
+.navCta:hover::before { transform: translateX(0); }
+.navCta:hover { color: var(--bg); }
+.navCta span { position: relative; z-index: 1; }
+
+.burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.burger span {
+  display: block;
+  width: 24px;
+  height: 1.5px;
+  background: var(--text);
+  transition: all 0.3s;
+}
+
+.burgerOpen {
+  background: var(--cyan) !important;
+}
+
+.mobileMenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: rgba(5, 10, 15, 0.98);
+  border-bottom: 1px solid var(--border);
+  backdrop-filter: blur(20px);
+  display: flex;
+  flex-direction: column;
+  padding: 20px 40px;
+  gap: 4px;
+}
+
+.mobileLink {
+  font-family: var(--font-mono);
+  font-size: 14px;
+  color: var(--muted);
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+  transition: color 0.2s;
+}
+
+.mobileLink:hover { color: var(--cyan); }
+
+@media (max-width: 900px) {
+  .nav { padding: 20px 24px; }
+  .scrolled { padding: 14px 24px; }
+  .links { display: none; }
+  .navCta { display: none; }
+  .burger { display: flex; }
+}

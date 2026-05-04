@@ -1,0 +1,131 @@
+.section {
+  padding: 120px 60px;
+  position: relative;
+}
+
+.header {
+  margin-bottom: 64px;
+  max-width: 560px;
+}
+
+.subtitle {
+  margin-top: 16px;
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--muted);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+  margin-bottom: 60px;
+}
+
+.card {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  padding: 36px 32px;
+  transition: background 0.3s;
+}
+
+.card:hover { background: var(--bg3); }
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 28px;
+}
+
+.cardDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.cardTitle {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.bars { display: flex; flex-direction: column; gap: 18px; }
+
+.skillRow { display: flex; flex-direction: column; gap: 6px; }
+
+.skillMeta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.skillName {
+  font-size: 13px;
+  color: var(--text);
+}
+
+.skillPercent {
+  font-family: var(--font-mono);
+  font-size: 11px;
+}
+
+.barBg {
+  height: 2px;
+  background: rgba(255,255,255,0.06);
+  border-radius: 1px;
+  overflow: hidden;
+}
+
+.barFill {
+  height: 100%;
+  border-radius: 1px;
+}
+
+/* Badges */
+.badgesWrap {
+  border-top: 1px solid var(--border);
+  padding-top: 48px;
+}
+
+.badgesTitle {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  color: var(--muted);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.badge {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  padding: 6px 14px;
+  border: 1px solid var(--border);
+  color: var(--muted);
+  letter-spacing: 0.06em;
+  transition: all 0.2s;
+  cursor: default;
+}
+
+.badge:hover {
+  border-color: var(--cyan-dim);
+  color: var(--cyan);
+  background: var(--cyan-glow);
+}
+
+@media (max-width: 1000px) {
+  .grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 768px) {
+  .section { padding: 80px 24px; }
+}
