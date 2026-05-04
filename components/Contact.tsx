@@ -31,12 +31,12 @@ export default function Contact() {
         animate={inView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.6 }}
       >
-        <p className="section-tag">Let's Talk</p>
+        <p className="section-tag">Let&apos;s Talk</p>
         <h2 className="section-title">
           Get In <span className="glow-text">Touch</span>
         </h2>
         <p className={styles.headerSub}>
-          I'm actively looking for full-time opportunities. If you have a role that fits, I'd love to hear from you.
+          I&apos;m actively looking for full-time opportunities. If you have a role that fits, I&apos;d love to hear from you.
         </p>
       </motion.div>
 
@@ -98,7 +98,7 @@ export default function Contact() {
             >
               <CheckCircle size={40} className={styles.successIcon} />
               <h3>Message Sent!</h3>
-              <p>Thanks for reaching out. I'll get back to you within 24 hours.</p>
+              <p>Thanks for reaching out. I&apos;ll get back to you within 24 hours.</p>
               <button className="btn-ghost" onClick={() => { setSent(false); setForm({ name: "", email: "", subject: "", message: "" }); }}>
                 Send Another
               </button>

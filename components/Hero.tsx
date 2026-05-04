@@ -32,7 +32,7 @@ export default function Hero() {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.4 }}
         >
-          <span>Hi, I'm</span>
+          <span>Hi, I&apos;m</span>
         </motion.div>
 
         <motion.h1
@@ -77,7 +77,7 @@ export default function Hero() {
         >
           Full Stack Developer with 4+ years crafting high-performance web experiences.
           Specialising in React, Next.js, Node.js — turning complex requirements into
-          clean, maintainable code that recruiters' clients love.
+          clean, maintainable code that recruiters&apos; clients love.
         </motion.p>
 
         <motion.div
