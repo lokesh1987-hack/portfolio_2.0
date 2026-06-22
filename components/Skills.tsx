@@ -61,6 +61,8 @@ const techBadges = [
   "Netlify",
   "CI/CD",
   "Git",
+  "GitHub Actions",
+  "Docker",
   "Lighthouse Optimization",
   "Core Web Vitals",
   "SSR Optimization",
