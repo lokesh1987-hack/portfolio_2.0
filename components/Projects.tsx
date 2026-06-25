@@ -230,6 +230,29 @@ const projects = [
     live: "https://projecttaskflow.netlify.app/",
     impact: "End-to-end task & project management system",
   },
+  {
+    id: 12,
+    title: "Dr. Roy Skin Solution – Dermatology Clinic Website",
+    category: "Frontend",
+    year: "2025",
+    description:
+      "Designed and developed a modern, SEO-friendly website for Dr. Roy Skin Solution, an advanced aesthetic dermatology clinic. Built responsive pages showcasing treatments, doctor profile, clinic locations, and patient trust indicators with a focus on performance, accessibility, and lead generation.",
+    tags: [
+      "Next.js",
+      "React.js",
+      "Tailwind CSS",
+      "Responsive Design",
+      "SEO Optimization",
+      "Performance Optimization",
+      "Healthcare Website",
+      "UI/UX Design",
+    ],
+    color: "blue",
+    featured: true,
+    github: "https://github.com/lokesh1987-hack",
+    live: "https://drroy.in/",
+    impact: "5000+ patients served through digital presence",
+  },
 ];
 
 const filters = ["All", "Full Stack", "Frontend", "Backend"];
